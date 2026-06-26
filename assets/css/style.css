@@ -248,6 +248,15 @@ body {
   border-radius: 24px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
 .project-card__thumb {
@@ -324,4 +333,75 @@ body {
 
 .project-card__body .project-card__desc + .project-card__desc {
   margin-top: 4px;
+}
+
+.contact {
+  background-color: #fff;
+  padding-block: 120px 80px;
+}
+
+.contact__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-inline: 24px;
+}
+
+.contact__intro {
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+  line-height: 2;
+}
+
+.contact__intro-lead {
+  font-weight: 700;
+}
+
+.contact__email {
+  margin-top: 80px;
+}
+
+.contact__email-label {
+  font-size: 22px;
+  font-weight: 700;
+  color: #3e6ba2;
+  line-height: 1.5;
+}
+
+.contact__email-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #4876af;
+  text-decoration: none;
+}
+
+.contact__footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact__divider-wrap {
+  width: 100%;
+  margin-top: 80px;
+  padding-inline: var(--grid-margin);
+}
+
+.contact__divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  width: 100%;
+}
+
+.contact__copyright {
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+  line-height: 1;
 }
